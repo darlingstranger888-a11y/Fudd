@@ -418,13 +418,9 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif user_type == 'credit':
         credits = user.get('credits', 0)
         plan_info = f"  💳 Plan: Credit - {credits} credits"
-    else:
-    user = update.effective_user
-    user_id = update.effective_user.id
-    update.effective_user.first_name
-    update.effective_user.username
-    plan_info = f"  🆓 Plan: Free User - No Access"
-
+       else:
+        plan_info = f"  🆓 Plan: Free User - No Access"
+           
         # ——— Welcome Message ———
     welcome_msg = (
         f"<b>⚡️ X7SMG ⚡️</b>\n"
